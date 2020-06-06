@@ -9,12 +9,12 @@
 
 import os, requests, uuid, json
 
-key_var_name = 'TRANSLATOR_TEXT_SUBSCRIPTION_KEY'
+key_var_name = 'd4751f58c2ba4732a0ebd0b07cd0b214'
 if not key_var_name in os.environ:
     raise Exception('Please set/export the environment variable: {}'.format(key_var_name))
 subscription_key = os.environ[key_var_name]
 
-endpoint_var_name = 'TRANSLATOR_TEXT_ENDPOINT'
+endpoint_var_name = 'https://traducteurocr.cognitiveservices.azure.com'
 if not endpoint_var_name in os.environ:
     raise Exception('Please set/export the environment variable: {}'.format(endpoint_var_name))
 endpoint = os.environ[endpoint_var_name]
